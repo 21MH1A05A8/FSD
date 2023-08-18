@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions</title>
+</head>
+<body>
+<script type="text/javascript">
+	//functionkeyword functionname(arg1,arg2...,argn)
+	//{
+        //statements
+	    //return statement
+    //}
+    //================================================================
+
+    //normal function with no parameters-------------------
+
+    // function test(){
+    // 	alert("testing")
+    // }
+    // test()
+
+    //================================================================
+    //function with one parameters--------
+
+    // function getname(a){
+    // 	document.write(a)
+    // }
+    // getname('lucky')
+
+     //================================================================
+    // for scanning the id card-----------
+
+    // var a = prompt("scan your id here");
+    // function scanyourid(rollno){
+    // 	document.write(rollno)
+    // }
+    // scanyourid(a)
+
+     //================================================================
+
+    //function with two parameters-----------
+
+    // var a = prompt("enter 1 number");
+    // var b = prompt("enter 2 number");
+    // function scanyourid(c,d){
+    //     c=parseInt(c);
+    //       d=parseInt(d);
+    //  document.write(c+d);
+    // }
+    // scanyourid(a,b)
+  
+  //================================================================
+     // one default and 2 parameters----------
+
+    // function sum(a=0,b=0)
+    // {
+    //     document.write(a+b);
+    // }
+    // sum();
+    // sum(10,20);
+
+    //================================================================
+    //  to store the function value in one variable---------
+
+    // const x=function mul(a,b){
+    //     return a*b;
+    //  }
+    //  document.write(x(2,5));
+
+ //================================================================
+    //anoynimus fuction is function without having name-----------------
+
+     // const s=function(a,b){
+     //    return a*b;
+     // }
+     // document.write(s(3,5));
+ //================================================================
+
+     //  task1 -----------------
+     //  var a = prompt("enter a number");
+     // function cubeofnumber(a){
+     //     a=parseInt(a);
+     //     document.write(a*a*a);
+     // }
+     //    cubeofnumber(a)
+
+    //================================================================
+
+    //es6 features ,arrow functions "=>"
+    //never use functionkeyword
+
+    //arrow function with 2 arguments
+    // sum = (a,b) =>{
+    //     document.write(a+b);
+    // }
+    // sum(2,3);
+
+    //================================================================
+    // arrow function with one argument--------------
+
+    //  getname = (a) =>{
+    //     document.write(a);
+    // }
+    // getname('ABC');
+    //================================================================
+     // arrow function with no argument--------------[ instead of using () for _ for no arguments]
+    // test = () =>{
+    //     document.write("testingsss");
+    // }
+    //  test()
+
+    //================================================================
+    // setTimeout function in javascript is used in when we want to show our output after certain time we use this 1second=1000
+    setTimeout(function(){
+        document.write("enables after 1 seconds");
+    },1000);
+
+ // callback function it is a function within function as an argument---------------------
+    setTimeout(test,2000)
+     function test(){
+        document.write("enables after 2 seconds");
+     }
+</script>
+</body>
+</html>

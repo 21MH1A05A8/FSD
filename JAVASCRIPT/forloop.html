@@ -1,0 +1,53 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script>
+	var trainees=[{
+		'name':'hari',
+		'rollno':'1234',
+		'college':'aec',
+		'branch':'cse'
+	},
+	{ 'name':'lucky',
+		'rollno':'435',
+		'college':'acoe',
+		'branch':'it'
+      
+	},
+	{ 'name':'oy',
+		'rollno':'43',
+		'college':'acet',
+		'branch':'eee'
+      
+	},
+	{ 'name':'o',
+		'rollno':'4399',
+		'college':'ac',
+		'branch':'civil'
+      
+	},
+	{ 'name':'oppp',
+		'rollno':'900',
+		'college':'acre',
+		'branch':'mech'
+      
+	}
+	]
+	//for (var i = 0; i < trainees.length; i++) {
+        // console.log(trainees[i]);
+       // console.log(trainees[i].name,trainees[i].rollno,trainees[i].college,trainees[i].branch);
+
+//}
+	for (let i in Object.keys(trainees)) {
+    for (let key in trainees[i]) {
+        document.write(trainees[i][key]+"</br>");
+    }
+}
+</script>
+</body>
+</html>
